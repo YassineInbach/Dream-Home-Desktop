@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+    max-width: 1280px;
+    width: 100%;
+    margin : 0 auto ;
+    background: #ffffff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    border: none;
+}
+  .slick-track{
+    margin: 0 auto 1em auto;
+  }
+  
+/* input::placeholder{
+  color: black;
+  font-size: 12px;
+  font-weight:400;
+ }
+ */
