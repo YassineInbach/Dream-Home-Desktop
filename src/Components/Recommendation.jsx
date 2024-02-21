@@ -36,16 +36,24 @@ function Recommendation({ Data }) {
 
   const CustomDot = ({ onClick }) => (
     <span
-      style={{
-        width: "10px",
-        height: "10px",
-        borderRadius: "50%",
-        backgroundColor: "#1E1E1E",
-        display: "inline-block",
-        cursor: "pointer",
-      }}
-      onClick={onClick}
-    />
+    style={{
+      width: "15px",
+      height: "15px",
+      borderRadius: "50%",
+      backgroundColor: "#f7f7f7",
+      border: "1.5px solid black",
+      display: "inline-block",
+      cursor: "pointer",
+      transition: "background-color 0.3s", // Ajout de la transition pour une animation fluide
+    }}
+    onClick={onClick}
+    onMouseDown={(e) => {
+      e.target.style.backgroundColor = "black"; // Changement de couleur de fond au survol
+    }}
+    onMouseLeave={(e) => {
+      e.target.style.backgroundColor = "#fafafa"; // Changement de couleur de fond au survol
+    }}
+  />
   );
 
   const settings = {
