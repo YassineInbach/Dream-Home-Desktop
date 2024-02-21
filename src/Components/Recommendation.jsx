@@ -48,7 +48,7 @@ function Recommendation({ Data }) {
     }}
     onClick={onClick}
     onMouseDown={(e) => {
-      e.target.style.backgroundColor = "black"; // Changement de couleur de fond au survol
+      e.target.style.backgroundColor = "black";  // Changement de couleur de fond au survol
     }}
     onMouseLeave={(e) => {
       e.target.style.backgroundColor = "#fafafa"; // Changement de couleur de fond au survol
